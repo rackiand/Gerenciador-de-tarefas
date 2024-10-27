@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%; 
+    position: fixed; 
+    top: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding-top: 200px; 
+}
+
+
+.logo {
+    flex: 10%;
+    text-align: left;
+    margin-left: 5%;
+    width: 200px;
+}
+
+.logo h1 {
+    font-family: "Ubuntu", sans-serif;
+    color: #006494;
+    font-size: 40px;
+    white-space: nowrap; 
+}
+
+
+.menu {
+    flex: 60%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: #13293d;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: #0066c5;
+    border-top: 4px solid #13293d;
+}
+
+#botao, #backButton {
+    background: #13293d;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 4px;
+    margin-left: 5%;
+}
+
+#botao:hover, #backButton:hover {
+    background: #0066c5;
+    border-top: none;
+}
+
+.card {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #0066c5;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3 {
+    color: #13293d;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#taskInput, #dateInput, #priorityInput, #addTaskBtn {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#taskInput, #dateInput, #priorityInput {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#addTaskBtn {
+    background-color: #13293d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addTaskBtn:hover {
+    background-color: #0066c5;
+}
+
+
+.item-icone {
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    padding-top: 40px;
+  }
+
+  .item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    cursor: pointer;
+  }
+  
+  .item.clicado {
+    background: #d4f6d9;
+  }
+  
+  .item.clicado .item-nome {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .item-icone {
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .item-nome {
+    flex: 55%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .item-botao {
+    flex: 25%;
+  }
+  
+  .delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .mdi-check-circle {
+    color: green;
+  }
